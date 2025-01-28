@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #EDA0EC;
+    padding: 10px;
+}
+
+/* Container */
+.birthday-container {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    box-shadow: 0 4px 7px rgba(0, 0, 0.2);
+}
+
+/* Header */
+.birthday-container h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Individual Birthday Entry */
+.birthday {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.birthday:last-child {
+    margin-bottom: 0;
+}
+
+/* Profile Image */
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 75px;
+}
+
+/* Name and Age */
+.birthday .info h3 {
+    font-size: 16px;
+    color: black;
+}
+
+.birthday .info p {
+    font-size: 12px;
+    color: black;
+}
+
+/* Button */
+.clear-btn {
+    background-color: #EDA0EC;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.clear-btn:hover {
+    background-color: #d85b5b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .birthday-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .birthday img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .birthday .info h3 {
+        font-size: 14px;
+    }
+
+    .birthday .info p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .birthday-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .birthday {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .birthday img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .birthday .info h3 {
+        font-size: 13px;
+    }
+
+    .birthday .info p {
+        font-size: 10px;
+    }
+
+    .clear-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
